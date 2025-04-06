@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home website</title>
+
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(221, 238, 223);
+            font-size: 25px;
+            opacity: 0;
+            transform: translateX(-100%); /* Initial position off the left */
+            animation: slideInAll 1s forwards; /* Animation to slide in */
+        }
+
+        header {
+            background-color: rgb(207, 196, 172);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #8b5d33; /* Dark brown background */
+            padding: 10px 0;
+            opacity: 0;
+            transform: translateX(-100%); /* Initial position off the left */
+            animation: slideInNav 1s forwards; /* Animation to slide in for the navbar */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4a261; /* Light orange on hover */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+            transition: transform 0.3s ease; /* Smooth transition for scaling */
+        }
+
+        @keyframes slideInAll {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInNav {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: left;
+            color: darkslategrey;
+            font-size: medium;
+        }
+
+        p {
+            text-align: left;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+<header>
+   <nav>
+       <a href="home.html">Home</a>
+       <a href="agama.html">Agama</a>
+       <a href="bahasaIndonesia.html">Bahasa Indonesia</a>
+       <a href="pkn.html">Pkn</a>
+       <a href="english.html">English</a>
+       <a hfef="ips.html">IPS</a>
+       <a href="mandarin.html">Mandarin</a>
+   </nav>
+</header>
+<h1>Candi Prambanan</h1>
+<h2>Informasi tentang Candi Prambanan</h2>
+<p>Candi Prambanan adalah kompleks candi Hindu terbesar di Indonesia yang dibangun pada abad ke-9 masehi. Candi ini 
+    dipersembahkan untuk Trimurti, tiga dewa utama Hindu yaitu Brahma sebagai dewa pencipta, Wishnu sebagai dewa pemelihara, dan Siwa sebagai dewa pemusnah.
+</p>
+<img src="yogyakarta.jpg" width="300" height="200">
+<h2>Kisah yang terkait dengan Candi Prambanan</h2>
+<P>Pada jaman dahulu sampai sekarang, dongeng yang masih terkait erat dengan Candi Prambanan
+    adalah kisah Roro Jonggrang, Bandun Bondowoso, dan ramayana (rama dan shinta)
+</P>
+<a href="https://www.cnnindonesia.com/edukasi/20240926163543-569-1148765/rangkuman-kisah-rama-shinta-dan-pesan-moral-di-dalamnya">kisah Rama dan Shinya</a>
+<a href="https://www.detik.com/jateng/budaya/d-6607812/kisah-bandung-bondowoso-dan-roro-jonggrang-legenda-candi-prambanan">Kisah Bandung Bondowoso</a>

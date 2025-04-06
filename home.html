@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home website</title>
+
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(221, 238, 223);
+            font-size: 25px;
+            opacity: 0;
+            transform: translateX(-100%); /* Initial position off the left */
+            animation: slideInAll 1s forwards; /* Animation to slide in */
+        }
+
+        header {
+            background-color: rgb(207, 196, 172);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #8b5d33; /* Dark brown background */
+            padding: 10px 0;
+            opacity: 0;
+            transform: translateX(-100%); /* Initial position off the left */
+            animation: slideInNav 1s forwards; /* Animation to slide in for the navbar */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4a261; /* Light orange on hover */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+            transition: transform 0.3s ease; /* Smooth transition for scaling */
+        }
+
+        @keyframes slideInAll {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInNav {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: left;
+            color: darkslategrey;
+            font-size: medium;
+        }
+
+        p {
+            text-align: left;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+<header>
+   <nav>
+       <a href="home.html">Home</a>
+       <a href="agama.html">Agama</a>
+       <a href="bahasaIndonesia.html">Bahasa Indonesia</a>
+       <a href="pkn.html">Pkn</a>
+       <a href="english.html">English</a>
+       <a hfef="ips.html">IPS</a>
+       <a href="mandarin.html">Mandarin</a>
+   </nav>
+</header>
+<h1>~Short Information about EduTrip~</h1>
+<h2>About the EduTrip</h2>
+<p>In the Edutrip, I went to Yogyakarta and Solo as my destination. There, we visited museums, learned more culture's that are in Indonesia
+    and we also learned many stuffs, including on how to make batik, perfume, tempe, etc.
+</p>
+<img src="yogyakarta.jpg" width="300" height="200" alt="Photo of Candi Prambanan">
+<p>The photo above this paragraph, is a photo of Candi Prambanan, an example of the destination I visited. It is one of my 
+    favorite destination, as it is easy to remember, not to mention the legend that is associated with this 
+    Candi, which is named "Roro Jonggrang"
+</p>
+<a href="https://smansasingaraja.sch.id/kisah-roro-jonggrang/">Story of Roro Jonggrang</a>
+</body>
+</html>
+

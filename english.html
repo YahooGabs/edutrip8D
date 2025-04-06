@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home website</title>
+
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(221, 238, 223);
+            font-size: 25px;
+            opacity: 0;
+            transform: translateX(-100%); /* Initial position off the left */
+            animation: slideInAll 1s forwards; /* Animation to slide in */
+        }
+
+        header {
+            background-color: rgb(207, 196, 172);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #8b5d33; /* Dark brown background */
+            padding: 10px 0;
+            opacity: 0;
+            transform: translateX(-100%); /* Initial position off the left */
+            animation: slideInNav 1s forwards; /* Animation to slide in for the navbar */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4a261; /* Light orange on hover */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+            transition: transform 0.3s ease; /* Smooth transition for scaling */
+        }
+
+        @keyframes slideInAll {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInNav {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: left;
+            color: darkslategrey;
+            font-size: medium;
+        }
+
+        p {
+            text-align: left;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+<header>
+   <nav>
+       <a href="home.html">Home</a>
+       <a href="agama.html">Agama</a>
+       <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+       <a href="pkn.html">Pkn</a>
+       <a href="english.html">English</a>
+       <a hfef="ips.html">IPS</a>
+       <a href="mandarin.html">Mandarin</a>
+   </nav>
+</header>
+<h1>My Experience in Yogyakarta and SOLO</h1>
+<h2>About my experience</h2>
+<p>My experience in Yogyakarta and solo has been amazing, I really love the food, the people
+    and the stories that were told that originated from Yogyakarta and SOLO. Overall, I really miss Yogyakarta and SOLO, and
+    I am hoping that I can go back to the places I visited during edutrip so I can enjoy them with me and my family.
+</p>
+<img src="aaaaaaa.jpeg"width="300" height="200">
